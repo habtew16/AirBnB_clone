@@ -9,7 +9,7 @@ An AirBnB clone.
 0x05 Usage
 0x06 Authors
 0x01 Summary
-This is a team project to build a minimum viable product of AirBnB.
+This is a team project to build a minimum viable product for AirBnB.
 
 The console serves as a command interpreter that facilitates the interaction with objects, providing an abstraction layer between these objects and their underlying storage mechanisms.
 
@@ -25,7 +25,7 @@ Storage
 All the classes are handled by the Storage engine in the FileStorage Class.
 
 0x02 Environment
-Suite CRM python Suite CRM git distributed version control system Github
+Suite CRM python Suite CRM git distributed version control system GitHub
 
 Proper Documentation and Coding Style Guidelines:
 pycodestyle (version 2.7.*)
@@ -126,7 +126,7 @@ Usage	By itself
 help	Provides a text describing how to use a command.
 Usage	By itself --or-- help <command>
 -----	-----
-create	Creates a new instance of a valid Class, saves it (to the JSON file) and prints the id. Valid classes are: BaseModel, User, State, City, Amenity, Place, Review.
+create	Creates a new instance of a valid Class, saves it (to the JSON file), and prints the id. Valid classes are BaseModel, User, State, City, Place, Amenity, and Review.
 Usage	create <class name>
 -----	-----
 show	Prints the string representation of an instance based on the class name and id
@@ -139,12 +139,14 @@ all	Prints all string representation of all instances based or not on the class 
 Usage	By itself or all <class name> --or-- <class name>.all()
 -----	-----
 -----	-----
-update	Updates an instance based on the class name and id by adding or updating attribute (saves the changes into a JSON file).
+Update updates an instance based on the class name and id by adding or updating an attribute (saves the changes into a JSON file).
 Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <class name>.update(<id>, <attribute name>, <attribute value>) --or-- <class name>.update(<id>, <dictionary representation>)
 -----	-----
 count	Retrieve the number of instances of a class.
 Usage	<class name>.count()
 
 Authors
+
 Habtamu Gebre
+
 Josephine Dassah
