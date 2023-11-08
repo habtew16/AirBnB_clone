@@ -1,14 +1,14 @@
-An AirBnB clone.
+# An AirBnB clone.
 
-0x00. AirBnB clone - The console
-0x00.Table of Contents
-0x01 Summary
-0x02 Environment
-0x03 Installation
-0x04 Testing
-0x05 Usage
-0x06 Authors
-0x01 Summary
+## 0x00. AirBnB clone - The console
+## 0x00.Table of Contents
+## 0x01 Summary
+## 0x02 Environment
+## 0x03 Installation
+## 0x04 Testing
+## 0x05 Usage
+## 0x06 Authors
+## 0x01 Summary
 This is a team project to build a minimum viable product for AirBnB.
 
 The console serves as a command interpreter that facilitates the interaction with objects, providing an abstraction layer between these objects and their underlying storage mechanisms.
