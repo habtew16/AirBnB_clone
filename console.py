@@ -3,7 +3,7 @@ import cmd
 from models.base_model import BaseModel
 from models import storage
 from shlex import split
-
+import shlex
 
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
