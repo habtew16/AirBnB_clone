@@ -8,7 +8,8 @@ class HBNBCommand(cmd.Cmd):
     classes = {"BaseModel"}
 
     def do_quit(self, arg):
-        """quit command"""
+        """Quit command to exit the program
+        """
         return True
 
     do_EOF = do_quit
