@@ -9,6 +9,7 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 import pep8
 
+
 class TestFileStorage(unittest.TestCase):
     """
     testing file storage
@@ -25,7 +26,7 @@ class TestFileStorage(unittest.TestCase):
     def teardown(self):
         try:
             os.remove("file.json")
-        except:
+        except Exception:
             pass
 
     def test_pep8_filestorage(self):
@@ -64,7 +65,7 @@ class TestFileStorage(unittest.TestCase):
 
         try:
             os.remove(path)
-        except:
+        except Exception:
             pass
 
         self.storage.save()
@@ -76,7 +77,7 @@ class TestFileStorage(unittest.TestCase):
 
         try:
             os.remove(path)
-        except:
+        except Exception:
             pass
 
         with open(path, "w") as f:
@@ -89,4 +90,3 @@ class TestFileStorage(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
