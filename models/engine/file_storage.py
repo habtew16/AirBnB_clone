@@ -5,7 +5,9 @@ is connect"""
 import json
 from models.base_model import BaseModel
 
+
 class FileStorage:
+
     """private properties"""
     __file_path = 'file.json'
     __objects = {}
@@ -17,6 +19,7 @@ class FileStorage:
         if obj:
             key = "{}.{}".format(type(obj).__name__, obj.id)
             self.__objects[key] = obj
+
     def save(self):
         jsonData = {}
         for key, value in self.__objects.items():
@@ -33,4 +36,3 @@ class FileStorage:
                     self.__objects[key] = newObj
         except FileNotFoundError:
             pass
-
