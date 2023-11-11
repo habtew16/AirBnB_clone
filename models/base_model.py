@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """base class for the airbnb console
-project from which all the other class
-inherit and based on"""
+project to be inherited
+"""
 from datetime import datetime
 import models
 import uuid
 
 
 class BaseModel:
-    """base model class for the airbnb poject"""
 
     def __init__(self, *args, **kwargs):
         """
