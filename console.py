@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""
-The conole v: 0.0.1
-contains entry point of cmd
-"""
 import cmd
 from models.base_model import BaseModel
 from models import storage
