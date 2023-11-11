@@ -8,6 +8,8 @@ import uuid
 
 
 class BaseModel:
+    """base model which is root for all
+    the rest of the airbnb project"""
 
     def __init__(self, *args, **kwargs):
         """
