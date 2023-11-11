@@ -108,6 +108,14 @@ class HBNBCommand(cmd.Cmd):
         except Exception:
             setattr(storage.all()[keyValue], strings[2], strings[3])
 
+    def stripper(self, st):
+        """strips that line"""
+        newstring = st[st.find("(")+1:st.rfind(")")]
+        newstring = shlex.shlex(newstring, posix=True)
+        newstring.whitespace += ','
+        newstring.whitespace_split = True
+        return list(newstring)
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
