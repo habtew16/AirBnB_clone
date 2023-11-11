@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Unittest to test FileStorage class
+"""uniitest filestorage
 """
 import unittest
 import json
@@ -12,26 +11,28 @@ import pep8
 
 class TestFileStorage(unittest.TestCase):
     """
-    testing file storage
+    testing file storage with unittest
     """
 
     @classmethod
-    def setUpClass(self):
+    def setUp(self):
+        """set up"""
         self.storage = FileStorage()
 
     @classmethod
     def teardown(self):
+        """tear down"""
         pass
 
     def teardown(self):
+        """tear down"""
         try:
             os.remove("file.json")
         except Exception:
             pass
 
     def test_pep8_filestorage(self):
-        """
-        tests for pep8
+        """pep8 style test unit
         """
         style = pep8.StyleGuide(quiet=True)
         p = style.check_files(['models/engine/file_storage.py'])

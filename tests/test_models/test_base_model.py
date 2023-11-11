@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Tests the basemodels"""
+"""unittests the basemodels"""
 import unittest
 import os
 import pep8
@@ -7,18 +7,18 @@ from models.base_model import BaseModel
 
 
 class TestBaseModel(unittest.TestCase):
-    """tests for basemodel"""
+    """all the tests for basemodel"""
+    
     @classmethod
     def setUp(self):
-        """sets up"""
+        """set up"""
         self.testBase = BaseModel()
         self.testBase.x = "x"
         self.testBase.y = 100
 
     @classmethod
     def tearDown(self):
-        """
-        tears down
+        """tear down
         """
         del self.testBase
         try:
