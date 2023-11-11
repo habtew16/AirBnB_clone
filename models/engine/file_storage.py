@@ -7,20 +7,30 @@ from models.base_model import BaseModel
 
 
 class FileStorage:
-
-    """private properties"""
+    """private properties
+    __file_path: variable that stores
+        file path
+    __objects: objects created rom user
+    """
     __file_path = 'file.json'
     __objects = {}
 
     def all(self):
+        """function to return all
+        objects created by baseclass
+        """
         return self.__objects
 
     def new(self, obj):
+        """method to create new object
+        in file storage"""
         if obj:
             key = "{}.{}".format(type(obj).__name__, obj.id)
             self.__objects[key] = obj
 
     def save(self):
+        """method to save file in json
+        data format"""
         jsonData = {}
         for key, value in self.__objects.items():
             jsonData[key] = value.to_dict()
@@ -28,6 +38,7 @@ class FileStorage:
             json.dump(jsonData, f)
 
     def reload(self):
+        """method to open data saved by json"""
         try:
             with open(self.__file_path, 'r') as f:
                 data = json.load(f)
