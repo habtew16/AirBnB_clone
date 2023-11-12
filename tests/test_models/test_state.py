@@ -4,7 +4,6 @@ import os
 import pep8
 from models.state import State
 from datetime import datetime
-import models
 
 
 class TestState(unittest.TestCase):
