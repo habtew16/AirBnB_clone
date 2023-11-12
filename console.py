@@ -17,7 +17,8 @@ from shlex import split
 
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
-    classes = {"BaseModel", "Amenity", "City", "Place", "User", "Review", "Review"}
+    classes = {"BaseModel", "Amenity", "City", "Place",
+               "User", "Review", "Review"}
 
     def do_quit(self, arg):
         return True
