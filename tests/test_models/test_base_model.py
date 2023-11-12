@@ -8,7 +8,7 @@ from models.base_model import BaseModel
 
 class TestBaseModel(unittest.TestCase):
     """all the tests for basemodel"""
-    
+
     @classmethod
     def setUp(self):
         """set up"""
