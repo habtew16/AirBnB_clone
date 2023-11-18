@@ -47,18 +47,18 @@ h2 {
 	font-size: 16px;
 }
 
-.locations .popover,
-.amenities .popover {
+.locations .wrapper,
+.amenities .wrapper {
 	display: none;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 }
 
-.locations:hover .popover {
+.locations:hover .wrapper {
 	display: block;
 }
 
-.amenities .popover {
+.amenities:hover .wrapper {
 	display: block;
 }
