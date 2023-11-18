@@ -17,6 +17,7 @@
 	border-radius: 4px;
 	align-self: flex-end;
 	border-right: 30px;
+	margin-left: auto;
 }
 
 .filters button:hover {
