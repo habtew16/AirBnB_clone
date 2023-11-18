@@ -48,7 +48,7 @@ h2 {
 }
 
 .wrapper {
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .wrapper h2 {
@@ -65,10 +65,6 @@ h2 {
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
-}
-
-.popover {
-	margin-right: 10px;
 }
 
 .locations:hover .wrapper {
