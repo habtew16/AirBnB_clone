@@ -54,6 +54,6 @@ h2 {
 	border-radius: 4px;
 }
 
-.popover:hover {
+.filters:hover .popover {
 	display: block;
 }
