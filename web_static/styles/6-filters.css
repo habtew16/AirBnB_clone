@@ -47,6 +47,18 @@ h2 {
 	font-size: 16px;
 }
 
+.wrapper {
+	margin-left: 10px;
+}
+
+.wrapper h2 {
+	margin-bottom: 5px;
+}
+
+.wrapper ul {
+	list-style-type: none;
+}
+
 .locations .wrapper,
 .amenities .wrapper {
 	display: none;
