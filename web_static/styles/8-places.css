@@ -41,6 +41,7 @@ article h2{
 }
 .information{
     display:flex;
+    flex-direction: column;
     border-top:1px solid #DDDDDD;
     border-bottom:1px solid #DDDDDD;
     height:80px;
