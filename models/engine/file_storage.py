@@ -18,7 +18,7 @@ class FileStorage:
         file path
     __objects: objects created rom user
     """
-    __file_path = 'modles/engine/file.json'
+    __file_path = 'file.json'
     __objects = {}
 
     def all(self):
